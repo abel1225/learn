@@ -1,0 +1,18 @@
+spring:
+  profiles:
+    active: local
+
+server:
+  servlet:
+    context-path: /filePaths
+    session:
+      timeout: 120s
+  port: 8100
+
+application:
+  filePaths:
+    images: ./pdfImages/
+  pathMapping:
+    images:
+      - pdfImages/DIALEV.png
+      - pdfImages/bmw.png
