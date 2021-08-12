@@ -21,6 +21,8 @@
         <module>filePaths</module>
         <module>mysql-json</module>
         <module>netty</module>
+        <module>vertx</module>
+        <module>filePress</module>
     </modules>
 
     <name>learn</name>
@@ -43,6 +45,12 @@
             <version>${spring-cloud.version}</version>
             <type>pom</type>
             <scope>import</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>net.coobird</groupId>
+            <artifactId>thumbnailator</artifactId>
+            <version>0.4.9</version>
         </dependency>
 
         <dependency>

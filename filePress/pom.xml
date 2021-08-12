@@ -9,12 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>netty</artifactId>
-    <packaging>pom</packaging>
-    <modules>
-        <module>netty-server</module>
-        <module>netty-client</module>
-    </modules>
+    <artifactId>filePress</artifactId>
 
 
 </project>
