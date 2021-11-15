@@ -25,6 +25,10 @@
         <module>filePress</module>
         <module>fileMerge</module>
         <module>junitPerf</module>
+        <module>springSecurity</module>
+        <module>fluentMybatis</module>
+        <module>aviator</module>
+        <module>redis</module>
     </modules>
 
     <name>learn</name>
