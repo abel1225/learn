@@ -23,7 +23,7 @@ public class MybatisConfig {
     public DataSource dataSource() {
         BasicDataSource dataSource = new BasicDataSource();
         dataSource.setDriverClassName("com.mysql.jdbc.Driver");
-        dataSource.setUrl("jdbc:mysql://localhost:3306/mybatis?useUnicode=true&characterEncoding=utf8");
+        dataSource.setUrl("jdbc:mysql://localhost:3306/learn?useUnicode=true&characterEncoding=utf8");
         dataSource.setUsername("root");
         dataSource.setPassword("root");
         return dataSource;

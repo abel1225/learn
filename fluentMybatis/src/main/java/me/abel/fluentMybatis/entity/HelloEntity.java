@@ -6,10 +6,11 @@ import cn.org.atool.fluent.mybatis.base.RichEntity;
 import lombok.Data;
 
 @Data
-@FluentMybatis
+@FluentMybatis(table = "tbl_increment")
 public class HelloEntity extends RichEntity {
 
-    private Long id;
+    private String ssnName;
+    private Long ssn;
 
     @Override
     public Class<? extends IEntity> entityClass() {
