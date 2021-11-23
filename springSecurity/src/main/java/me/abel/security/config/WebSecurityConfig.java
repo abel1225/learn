@@ -28,7 +28,7 @@ import java.util.Map;
  * @Author Abel.li
  * @Date 2021/10/25 下午18:35
  */
-@Configuration
+//@Configuration
 public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
     @Bean
     PasswordEncoder passwordEncoder(){
