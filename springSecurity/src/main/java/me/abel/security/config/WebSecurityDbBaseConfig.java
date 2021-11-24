@@ -64,8 +64,11 @@ public class WebSecurityDbBaseConfig extends WebSecurityConfigurerAdapter {
                 .loginPage("index.html")
                 .loginProcessingUrl("login")
                 .defaultSuccessUrl("index").permitAll()
+                // auth
                 .and().authorizeRequests().antMatchers("/", "/access").permitAll().antMatchers("/auth").hasAuthority("admin").anyRequest().authenticated()
+                // remember me
                 .and().rememberMe().tokenRepository(persistentTokenRepository()).rememberMeParameter("remember").tokenValiditySeconds(10).userDetailsService(userDetailsService)
+                // csrf config: <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}"/>
                 .and().csrf().disable(); //关闭CSRF防护
     }
 }
