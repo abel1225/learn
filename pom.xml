@@ -30,6 +30,7 @@
         <module>aviator</module>
         <module>redis</module>
         <module>image</module>
+        <module>springSecurityReal</module>
     </modules>
 
     <name>learn</name>
