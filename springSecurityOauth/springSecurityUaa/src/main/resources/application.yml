@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: quartz-server
+  datasource:
+    url: jdbc:mysql://localhost:3306/learn?useUnicode=true&characterEncoding=UTF-8&useSSL=false&useOldAliasMetadataBehavior=true
+    username: root
+    password: root
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    hikari:
+      login-timeout: 5
+      validation-timeout: 3000
+      minimum-idle: 10
+      connection-test-query: select 1 from dual
+      connection-timeout: 3000
+      idle-timeout: 600000
+      max-lifetime: 1800000
+      maximum-pool-size: 20
+      pool-name: hikari
+      register-mbeans: false
+  jpa:
+    open-in-view: true
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    database-platform: me.abel.security.dialect.MySQL5InnoDBDialectUtf8mb4

@@ -31,6 +31,8 @@
         <module>redis</module>
         <module>image</module>
         <module>springSecurityReal</module>
+        <module>springSecurityOauth</module>
+        <module>quartz</module>
     </modules>
 
     <name>learn</name>
